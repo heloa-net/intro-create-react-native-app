@@ -34,6 +34,7 @@ const images = {
   feels: require("../assets/feels.jpg"),
   fine: require("../assets/fine.jpg"),
   omg: require("../assets/omg.jpg"),
+  ouch: require("../assets/ouch.jpg"),
   title: require("../assets/title.jpg")
 };
 
@@ -123,6 +124,60 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={4} textColor="secondary" caps>Let's get started</Heading>
+          <Appear>
+            <Image src={images.ouch} width="50%" />
+          </Appear>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <List textColor="tertiary">
+            <ListItem>Break your idea into parts</ListItem>
+            <ListItem>Make it simple!</ListItem>
+            <ListItem>Test with your audience</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Link href="http://facebook.github.io/react-native/docs/tutorial.html" target="_blank">
+            <Heading size={4} textColor="primary">Official docs tutorial</Heading>
+          </Link>
+          <Link href="https://www.udemy.com/the-complete-react-native-and-redux-course" target="_blank">
+            <Heading size={4} textColor="primary">Stephen's course</Heading>
+          </Link>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Link href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">
+            <Heading size={4} textColor="primary">RN Components</Heading>
+          </Link>
+          <Link href="https://docs.expo.io/versions/latest/sdk/index.html" target="_blank">
+            <Heading size={4} textColor="primary">Expo API</Heading>
+          </Link>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary">React Conf BR app</Heading>
+          <Heading size={4} textColor="primary" caps>Repo link</Heading>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Limitations</Heading>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>You got this, let's do it</Heading>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Repo link</Heading>
+          <Heading size={4} textColor="primary" caps>slides link</Heading>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>Contact information 💁🏼💕</Heading>
+        </Slide>
 
       </Deck>
     );
