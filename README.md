@@ -1,2 +1,2 @@
-# react-native-intro-feat-expo
-Slides for my React Native Intro feat. Expo talk
+# react-native-intro-feat-crna
+Slides for my React Native Intro feat. CRNA talk
