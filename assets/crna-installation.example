@@ -1,0 +1,5 @@
+# YARN
+yarn add create-react-native-app
+create-react-native-app my-app
+cd my-app/
+yarn start
