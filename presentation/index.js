@@ -42,7 +42,7 @@ preloader(images);
 
 const theme = createTheme({
   primary: "white",
-  secondary: "#d645bb",
+  secondary: "#d65470",
   tertiary: "#1F2022",
   quaternary: "#CECECE"
 }, {
@@ -75,7 +75,7 @@ export default class Presentation extends React.Component {
             <List>
               <ListItem>Facebook & Expo</ListItem>
               <ListItem>create-react-app</ListItem>
-              <Link href="https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html" target="_blank">
+              <Link textColor="tertiary" href="https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html" target="_blank">
                 <ListItem>⚡Talk at React Conf '17</ListItem>
               </Link>
             </List>
@@ -119,24 +119,17 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
-            <Quote>OMG it's demo time</Quote>
-            <Cite>My brain right now</Cite>
+            <Quote>How long does it take to get it running?</Quote>
+            <Cite>You</Cite>
           </BlockQuote>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
+          {/* TODO: decide whether to remove or change this slide */}
           <Heading size={4} textColor="secondary" caps>Let's get started</Heading>
           <Appear>
             <Image src={images.ouch} width="50%" />
           </Appear>
-        </Slide>
-
-        <Slide transition={["fade"]} bgColor="primary">
-          <List textColor="tertiary">
-            <ListItem>Break your idea into parts</ListItem>
-            <ListItem>Make it simple!</ListItem>
-            <ListItem>Test with your audience</ListItem>
-          </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
@@ -158,28 +151,61 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary">React Conf BR app</Heading>
-          <Heading size={4} textColor="primary" caps>Repo link</Heading>
+          <Link href="https://github.com/she-dev/reactconfbr-app" target="_blank">
+            <Heading size={4} textColor="primary">React Conf BR app</Heading>
+            <Heading size={4} textColor="primary">made with CRNA</Heading>
+          </Link>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>Limitations</Heading>
+          <List textColor="primary">
+            <ListItem>react-native link</ListItem>
+            <ListItem>Pure JS</ListItem>
+            <Appear>
+              <ListItem>Eject</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>You got this, let's do it</Heading>
+          {/* TODO: add image */}
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <List textColor="tertiary">
+            <ListItem>Make it simple!</ListItem>
+            <ListItem>Break your idea into parts</ListItem>
+            <ListItem>Learn just enough to get started</ListItem>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary" caps>Repo link</Heading>
-          <Heading size={4} textColor="primary" caps>slides link</Heading>
+          {/* TODO: deploy on now.sh */}
+          <Link href="" target="_blank">
+            <Heading size={4} textColor="primary" caps>Link to this presentation</Heading>
+          </Link>
+          <Link href="https://github.com/she-dev/react-native-intro-feat-crna" target="_blank">
+            <Heading size={4} textColor="primary" caps>Slides on GitHub</Heading>
+          </Link>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary" caps>Contact information 💁🏼💕</Heading>
+          <Heading size={4} textColor="primary">Thank you!  💁🏼💕</Heading>
+          {/* TODO: insert line break */} TODO: check them!
+          <Appear>
+            <Link href="https://she-dev.com" target="_blank">
+              <Heading size={4} textColor="secondary">Heloá Meneses</Heading>
+              <Heading size={4} textColor="primary">she-dev.com</Heading>
+            </Link>
+          </Appear>
+          {/* TODO: check colors! */}
         </Slide>
 
       </Deck>
     );
   }
 }
+
+
