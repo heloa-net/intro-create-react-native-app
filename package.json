@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
+  "name": "intro-create-react-native-app",
   "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "description": "Slides for Introduction to React Native feat. CRNA talk @she-dev she-dev.com",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -10,7 +10,7 @@
     "deploy": "npm run clean & npm run build && surge -p .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "Heloá Meneses",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "3.0.3",
