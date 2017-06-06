@@ -33,7 +33,6 @@ const images = {
   crying: require("../assets/crying.jpg"),
   feels: require("../assets/feels.jpg"),
   fine: require("../assets/fine.jpg"),
-  omg: require("../assets/omg.jpg"),
   ouch: require("../assets/ouch.jpg"),
   title: require("../assets/title.jpg")
 };
@@ -42,7 +41,7 @@ preloader(images);
 
 const theme = createTheme({
   primary: "white",
-  secondary: "#d65470",
+  secondary: "#df2668",
   tertiary: "#1F2022",
   quaternary: "#CECECE"
 }, {
@@ -53,9 +52,9 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["zoom", "slide"]} transitionDuration={450} theme={theme}>
 
-        <Slide transition={["zoom"]} bgImage={images.title} />
+        <Slide transition={["zoom"]} bgColor="tertiary" bgImage={images.title} />
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>What & why?</Heading>
@@ -88,9 +87,9 @@ export default class Presentation extends React.Component {
           </Link>
           <Heading size={4}>🎉</Heading>
           <List>
-            <ListItem>Minimal setup</ListItem>
-            <ListItem>Test on your mobile</ListItem>
-            <ListItem>Get started quickly</ListItem>
+            <Appear><ListItem>Minimal setup</ListItem></Appear>
+            <Appear><ListItem>Test on your mobile</ListItem></Appear>
+            <Appear><ListItem>Get started quickly</ListItem></Appear>
           </List>
         </Slide>
 
@@ -125,11 +124,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
-          {/* TODO: decide whether to remove or change this slide */}
-          <Heading size={4} textColor="secondary" caps>Let's get started</Heading>
-          <Appear>
-            <Image src={images.ouch} width="50%" />
-          </Appear>
+          <Heading size={4} textColor="secondary" caps>Let's talk code</Heading>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
@@ -160,30 +155,38 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>Limitations</Heading>
           <List textColor="primary">
-            <ListItem>react-native link</ListItem>
-            <ListItem>Pure JS</ListItem>
+            <Appear>
+              <ListItem>react-native link</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Pure JS</ListItem>
+            </Appear>
             <Appear>
               <ListItem>Eject</ListItem>
             </Appear>
           </List>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary" caps>You got this, let's do it</Heading>
-          {/* TODO: add image */}
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={4} textColor="secondary" caps>You got this, let's do it</Heading>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="primary">
-          <List textColor="tertiary">
-            <ListItem>Make it simple!</ListItem>
-            <ListItem>Break your idea into parts</ListItem>
-            <ListItem>Learn just enough to get started</ListItem>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <List textColor="primary">
+            <Appear>
+              <ListItem>Make it simple!</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Break your idea into parts</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Learn just enough to get started</ListItem>
+            </Appear>
           </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          {/* TODO: deploy on now.sh */}
-          <Link href="" target="_blank">
+          <Link href="https://intro-create-react-native-app-guitizhpxa.now.sh/" target="_blank">
             <Heading size={4} textColor="primary" caps>Link to this presentation</Heading>
           </Link>
           <Link href="https://github.com/she-dev/react-native-intro-feat-crna" target="_blank">
@@ -191,16 +194,15 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={4} textColor="primary">Thank you!  💁🏼💕</Heading>
-          {/* TODO: insert line break */} TODO: check them!
+        <Slide transition={["fade"]} bgColor="secondary">
           <Appear>
-            <Link href="https://she-dev.com" target="_blank">
-              <Heading size={4} textColor="secondary">Heloá Meneses</Heading>
-              <Heading size={4} textColor="primary">she-dev.com</Heading>
-            </Link>
+            <Heading size={4} textColor="primary">Thank you!  💁🏼💕</Heading>
           </Appear>
-          {/* TODO: check colors! */}
+          <Heading size={4} textColor="secondary">follow me on GitHub</Heading>
+          <Link href="https://she-dev.com" target="_blank">
+            <Heading size={4} textColor="primary">Heloá Meneses</Heading>
+            <Heading size={4} textColor="primary">she-dev.com</Heading>
+          </Link>
         </Slide>
 
       </Deck>
