@@ -31,9 +31,7 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   crying: require("../assets/crying.jpg"),
-  feels: require("../assets/feels.jpg"),
   fine: require("../assets/fine.jpg"),
-  ouch: require("../assets/ouch.jpg"),
   rn: require("../assets/react-native-icon.png"),
   title: require("../assets/title.jpg")
 };
