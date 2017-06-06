@@ -1,2 +1,2 @@
-# react-native-intro-feat-crna
-Slides for my React Native Intro feat. CRNA talk
+# intro-create-react-native-app
+Slides for my Introduction to React Native feat. CRNA talk
