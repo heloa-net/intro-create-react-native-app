@@ -36,6 +36,14 @@ const images = {
   rn: require("../assets/react-native-icon.png"),
   title: require("../assets/title.jpg"),
   twitter: require("../assets/twitter.png"),
+  homeandroid: require("../assets/home-android.png"),
+  homedraft: require("../assets/homedraft.jpg"),
+  homeios: require("../assets/home-ios.png"),
+  locationandroid: require("../assets/location-android.png"),
+  locationdraft: require("../assets/location-draft.jpg"),
+  locationios: require("../assets/location-ios.png"),
+  scheduleandroid: require("../assets/schedule-android.png"),
+  scheduledraft: require("../assets/schedule-draft.jpg")
 };
 
 preloader(images);
@@ -162,11 +170,47 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Link href="https://github.com/she-dev/reactconfbr-app" target="_blank">
-            <Heading size={4} textColor="primary">React Conf BR app</Heading>
-            <Heading size={4} textColor="primary">made with CRNA</Heading>
+            <Heading size={4} textColor="secondary">React Conf BR app</Heading>
+            <Heading size={4} textColor="secondary">with CRNA</Heading>
           </Link>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Appear>
+            <Image src={images.homedraft} padding="0 50px" />
+          </Appear>
+          <Appear>
+            <Image src={images.locationdraft} />
+          </Appear>
+        </Slide>
+
+        <Slide transition={["none"]} bgColor="tertiary" >
+          <Appear>
+            <Image src={images.scheduledraft} padding="0 50px 50px" />
+          </Appear>
+          <Appear>
+            <Image src={images.scheduleandroid} />
+          </Appear>
+        </Slide>
+  
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Appear>
+            <Image src={images.homeandroid} padding="0 50px" />
+          </Appear>
+          <Appear>
+            <Image src={images.homeios} />
+          </Appear>
+        </Slide>
+  
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Appear>
+            <Image src={images.locationandroid} padding="0 50px" />
+          </Appear>
+          <Appear>
+            <Image src={images.locationios} />
+          </Appear>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
