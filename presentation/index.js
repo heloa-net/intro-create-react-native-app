@@ -34,6 +34,7 @@ const images = {
   feels: require("../assets/feels.jpg"),
   fine: require("../assets/fine.jpg"),
   ouch: require("../assets/ouch.jpg"),
+  rn: require("../assets/react-native-icon.png"),
   title: require("../assets/title.jpg")
 };
 
@@ -55,6 +56,22 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={450} theme={theme}>
 
         <Slide transition={["zoom"]} bgColor="tertiary" bgImage={images.title} />
+
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>What & why?</Heading>
+          <Appear>
+            <Image src={images.rn} />
+          </Appear>
+          <Heading size={4} textColor="tertiary">hey there dude/gal/person</Heading>
+        </Slide>
+
+        <Slide transition={["none"]} bgColor="tertiary">
+          <Heading size={4} textColor="primary" caps>What & why?</Heading>
+          <Image src={images.rn} />
+          <Link href="https://www.facebook.com/events/120474378503412/permalink/126750267875823/" target="_blank">
+            <Heading size={4} textColor="primary">@sseraphini talk on RN</Heading>
+          </Link>
+        </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={4} textColor="primary" caps>What & why?</Heading>
@@ -186,7 +203,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Link href="https://intro-create-react-native-app-guitizhpxa.now.sh/" target="_blank">
+          <Link href="https://intro-create-react-native-app-zabkoasgbu.now.sh" target="_blank">
             <Heading size={4} textColor="primary" caps>Link to this presentation</Heading>
           </Link>
           <Link href="https://github.com/she-dev/react-native-intro-feat-crna" target="_blank">
