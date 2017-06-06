@@ -32,8 +32,10 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   crying: require("../assets/crying.jpg"),
   fine: require("../assets/fine.jpg"),
+  github: require("../assets/github.png"),
   rn: require("../assets/react-native-icon.png"),
-  title: require("../assets/title.jpg")
+  title: require("../assets/title.jpg"),
+  twitter: require("../assets/twitter.png"),
 };
 
 preloader(images);
@@ -217,6 +219,12 @@ export default class Presentation extends React.Component {
           <Link href="https://she-dev.com" target="_blank">
             <Heading size={4} textColor="primary">Heloá Meneses</Heading>
             <Heading size={4} textColor="primary">she-dev.com</Heading>
+          </Link>
+          <Link href="https://twitter.com/_shedev" target="_blank">
+            <Heading size={4} textColor="primary"><Image src={images.twitter} margin="-0.5rem 0.8rem" width="6%" />_shedev</Heading>
+          </Link>
+          <Link href="https://github.com/she-dev" target="_blank">
+            <Heading size={4} textColor="primary"><Image src={images.github} margin="-0.5rem 1rem" width="6%" />she-dev</Heading>
           </Link>
         </Slide>
 
