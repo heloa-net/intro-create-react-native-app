@@ -245,7 +245,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Link href="https://intro-create-react-native-app-zabkoasgbu.now.sh" target="_blank">
+          <Link href="https://intro-create-react-native-app.now.sh" target="_blank">
             <Heading size={4} textColor="primary" caps>Link to this presentation</Heading>
           </Link>
           <Link href="https://github.com/she-dev/react-native-intro-feat-crna" target="_blank">
