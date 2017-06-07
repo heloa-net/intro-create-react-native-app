@@ -14,8 +14,7 @@ import {
   ListItem,
   List,
   Quote,
-  Slide,
-  Text
+  Slide
 } from "spectacle";
 
 // Import image preloader util
@@ -51,8 +50,7 @@ preloader(images);
 const theme = createTheme({
   primary: "white",
   secondary: "#df2668",
-  tertiary: "#1F2022",
-  quaternary: "#CECECE"
+  tertiary: "#1F2022"
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
@@ -194,7 +192,7 @@ export default class Presentation extends React.Component {
             <Image src={images.scheduleandroid} />
           </Appear>
         </Slide>
-  
+
         <Slide transition={["fade"]} bgColor="tertiary">
           <Appear>
             <Image src={images.homeandroid} padding="0 50px" />
@@ -203,7 +201,7 @@ export default class Presentation extends React.Component {
             <Image src={images.homeios} />
           </Appear>
         </Slide>
-  
+
         <Slide transition={["fade"]} bgColor="tertiary">
           <Appear>
             <Image src={images.locationandroid} padding="0 50px" />
